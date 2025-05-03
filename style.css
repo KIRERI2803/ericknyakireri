@@ -1,0 +1,182 @@
+/* 
+Publisher: ERICK NYAKIRERI 
+Coder: Nyakireri 
+*/
+
+:root {
+    --primary-color: #0a66c2;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --footer-bg: #1b1b1b;
+    --footer-text: #ccc;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    background: #003c80;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #005bb5;
+}
+
+.hero {
+    background-color: var(--secondary-color);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.section {
+    padding: 40px 20px;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.section p {
+    margin-bottom: 15px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #004799;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-logos img {
+    height: 40px;
+    width: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logos img:hover {
+    opacity: 1;
+}
+
+
+/* Responsive Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    .section h2 {
+        font-size: 1.6em;
+    }
+}
